@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting visulizer</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+                <div class="algos">
+                    <button onclick="bubbleSort(array)" >Bubble</button>
+                    <button onclick="selectionSort()">Selection</button>
+                    <button onclick="insertionSort()">Insertion</button>
+                    <button onclick="margeSort()">Merge</button>
+                    <button onclick="quickSort()">Quick</button>
+                    <button style="margin-right: 0px;" onclick="heapSort()">Heap</button>
+                </div>
+
+        </nav>
+    </header>
+
+
+    <section>
+
+        <div id="Info_Cont1">
+
+            <h3>TIME COMPLEXITY</h3>
+
+            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Time_Worst"></p>
+                </div>
+                
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Average case:</p>
+                    <p id="Time_Average"></p>
+                </div>
+                
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Best case:</p>
+                    <p id="Time_Best"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="container">
+
+        </div>
+
+        <div>
+            <button onclick="init()">init</button>
+            <button onclick="play()">play</button>
+        </div>
+        <div id="Info_Cont2">
+
+            <h3>SPACE COMPLEXITY</h3>
+
+            <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
+
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Space_Worst"></p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <hr>
+
+    
+    <script src="./js/script.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
